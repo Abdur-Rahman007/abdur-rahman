@@ -16,7 +16,7 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
-  base: "/abdur-rahman",
+  base: "/abdur-rahman/",
   server: { allowedHosts: ["terminal.local"] },
   plugins: [
     figmaAssetResolver(),
