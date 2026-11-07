@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive layout check</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        background: #111827;
+        color: #e5e7eb;
+        font: 14px system-ui;
+      }
+      header {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      main {
+        display: flex;
+        gap: 24px;
+        align-items: flex-start;
+      }
+      iframe {
+        display: block;
+        border: 1px solid #475569;
+        max-width: none;
+        background: #020817;
+      }
+      a,
+      button {
+        color: #93c5fd;
+      }
+      button,
+      select {
+        background: #1e293b;
+        border: 1px solid #475569;
+        border-radius: 6px;
+        color: #fff;
+        padding: 8px;
+      }
+      h2 {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <strong>Responsive layout check</strong
+      ><label
+        >Phone width
+        <select id="width">
+          <option value="375">375px</option>
+          <option value="320">320px</option>
+          <option value="430">430px</option>
+        </select></label
+      ><button data-route="">Home</button
+      ><button data-route="resume">Resume</button
+      ><button data-route="projects">Projects</button
+      ><button data-route="contact">Contact</button
+      ><a href="../index.html">Full-size website</a>
+    </header>
+    <main>
+      <section>
+        <h2>Phone</h2>
+        <iframe
+          id="phone"
+          title="Phone preview"
+          src="../#/"
+          width="375"
+          height="812"
+        ></iframe>
+      </section>
+      <section>
+        <h2>Tablet</h2>
+        <iframe
+          id="tablet"
+          title="Tablet preview"
+          src="../#/"
+          width="768"
+          height="1024"
+        ></iframe>
+      </section>
+    </main>
+    <script>
+      const phone = document.getElementById("phone");
+      document
+        .getElementById("width")
+        .addEventListener(
+          "change",
+          (event) => (phone.width = event.target.value),
+        );
+      document
+        .querySelectorAll("[data-route]")
+        .forEach((button) =>
+          button.addEventListener("click", () =>
+            document
+              .querySelectorAll("iframe")
+              .forEach((frame) => (frame.src = "../#/" + button.dataset.route)),
+          ),
+        );
+    </script>
+  </body>
+</html>

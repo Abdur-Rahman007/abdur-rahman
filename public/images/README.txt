@@ -1,0 +1,1 @@
+profile.png is the supplied transparent portrait, already configured in src/app/data/portfolio.ts. It is displayed in full, at its original aspect ratio, in the About Me section. To replace it later, update photoUrl or replace this image.

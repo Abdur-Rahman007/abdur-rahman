@@ -1,0 +1,8 @@
+node_modules/
+dist/
+portfolio-update-backups/
+.vite/
+*.local
+.env
+.env.*
+!.env.example
