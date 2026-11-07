@@ -16,14 +16,9 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/app/*"
-      ],
-      "@/styles/*": [
-        "src/styles/*"
-      ]
+  "@/*": ["./src/app/*"],
+  "@/styles/*": ["./src/styles/*"]
     }
   },
   "include": [
