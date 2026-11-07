@@ -12,7 +12,7 @@ export const profile = {
   // The whole supplied portrait is displayed at its original aspect ratio.
   photoUrl: "images/profile.png",
   // Paste your own YouTube watch/share URL here when your introduction is ready.
-  youtubeUrl: "",
+  youtubeUrl: "https://youtube.com/shorts/fic9nHCKtxI",
   resumePath: "resume/Abdur-Rahman-CV.pdf",
   bio: [
     "A curious and driven Computer Science and Engineering undergraduate at AIUB, with a passion for coding, analytical problem solving, and continuous learning. My projects span software development, machine learning, deep learning, and natural language processing.",
@@ -42,6 +42,7 @@ export const education = {
     "Introduction to Data Science",
     "Computer Vision and Pattern Recognition",
     "Natural Language Processing",
+    "Human-computer interaction",
   ],
 };
 
