@@ -22,7 +22,7 @@ export const resumeAwards = [
       "Selected for the ICPC Asia Dhaka Regional Contest on behalf of AIUB.",
   },
   {
-    year: "2023–Present",
+    year: "2024–Present",
     detail: "Merit Scholarship at AIUB — Up to 60% tuition waiver.",
   },
   { year: "2015", detail: "3rd Place — School Science Fair." },
