@@ -24,7 +24,7 @@ export function VideoIntroduction() {
           <div
             className={
               videoId
-                  ? "w-full min-w-0 aspect-video min-h-[200px]"
+                  ? "w-full min-w-0 aspect-[4/3] min-h-[200px]"
                   : "w-full min-w-0 aspect-video min-h-[280px] sm:min-h-0"
             }
           >
