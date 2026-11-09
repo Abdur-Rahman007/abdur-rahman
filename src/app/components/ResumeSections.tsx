@@ -19,7 +19,7 @@ import {
 } from "../data/resume";
 import { SectionHeading } from "./SectionHeading";
 
-const card = "bg-gray-900/60 border border-gray-700/50 rounded-xl p-6 md:p-8";
+const card = "bg-gray-900/60 border border-gray-700/50 rounded-xl p-6 md:p-8 hover:border-purple-400/50 transition-colors duration-300 motion-reduce:transition-none";
 
 export function ResumeAchievements() {
   return (
@@ -132,7 +132,7 @@ export function ResumeInterests() {
             return (
               <div
                 key={interest}
-                className="flex items-center gap-3 rounded-xl border border-blue-400/20 bg-blue-500/10 px-5 py-4 text-gray-200"
+                className="flex items-center gap-3 rounded-xl border border-blue-400/20 bg-blue-500/10 px-5 py-4 text-gray-200 hover:border-purple-400/50 transition-colors duration-300 motion-reduce:transition-none"
               >
                 <Icon
                   className="text-blue-300 shrink-0"

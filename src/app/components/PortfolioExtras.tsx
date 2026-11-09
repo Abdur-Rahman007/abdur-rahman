@@ -22,7 +22,7 @@ export function Education() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="bg-gray-900/60 border border-blue-400/20 rounded-xl p-6 md:p-10"
+          className="bg-gray-900/60 border border-blue-400/20 rounded-xl p-6 md:p-10 hover:border-purple-400/50 transition-colors duration-300 motion-reduce:transition-none"
         >
           <div className="flex flex-col sm:flex-row gap-8 items-start">
             <img
